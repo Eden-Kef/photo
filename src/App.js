@@ -21,7 +21,7 @@ const App = () => {
       <motion.div
         variants={cursorVariants}
         animate={cursorBG}
-        className='w-[32px] h-[32px] bg-white fixed top-0 left-0 pointer-events-none z-50 rounded-full'>
+        className='w-[40px] h-[32px] bg-primary fixed top-0 left-0 pointer-events-none z-50 rounded-full'>
       </motion.div>
     </>
   );

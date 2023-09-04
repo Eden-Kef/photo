@@ -15,7 +15,7 @@ const Socialmedia = () => {
     >
       <ul className='flex gap-x-4 text-gray-200'>
           <li>
-          <a href='http://www.mail.com' target='_blank' rel="noreferrer" >
+          <a href='http://www.edenkefale05@gmail.com' target='_blank' rel="noreferrer" >
             <HiOutlineMail size ={20}/>
           </a>
         </li> 

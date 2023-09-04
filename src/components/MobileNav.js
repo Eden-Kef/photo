@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 //import motion
 import { motion } from 'framer-motion';
 
-
-
 //menu variants
 const menuVariants = {
     hidden: {   
@@ -60,6 +58,9 @@ const MobileNav = () => {
             </li>
             <li>
                 <Link onClick ={() => setOpenMenu(false)} to = "/portfolio">Portfolio</Link>
+            </li>
+            <li>
+                <Link onClick ={() => setOpenMenu(false)}to = "/blog">Blog</Link>
             </li>
             <li>
                 <Link onClick ={() => setOpenMenu(false)}to = "/contact">Contact</Link>

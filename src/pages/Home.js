@@ -11,12 +11,12 @@ import { CursorContext } from '../context/CursorContext';
 const Home = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
-    <div className='min-h-screen w-full px-8 text-white bg-gradient-to-br from-indigo-950 via-slate-950 to-black'>
+     <div className='h-full max-w-full text-white bg-gradient-to-br from-indigo-950 via-slate-950 to-black'>
       {/*<img src = {PhotographerImg} className='mix-blend-overlay object-cover'/>*/}
 
 {/*Text and Image wrapper*/}
-    <div className='max-w-screen-lg min-h-screen m-auto flex flex-col
-       items-center justify-between px-2 pb-10 md:flex-row'
+    <div className='max-w-screen-lg max-h-screen-lg m-auto flex flex-col
+       items-center justify-between px-2 md:flex-row'
    >
 
 {/*text*/}
@@ -54,16 +54,19 @@ const Home = () => {
         variants={{
         hidden: { opacity: 0, x: -50 },
         visible: { opacity: 1, x: 0 },
-}}className='flex justify-end max-h-96 lg:max-h-max'> 
-  <div className='relative lg:-right-20 overflow-hidden max-sm:rounded-bl-3xl max-sm:rounded-br-3xl '> 
-    <img
+}}> 
+  <div className='relative lg:-right-20'> 
+    <img 
     src={ PhotographerImg } 
     alt =''
+    className='mb-11'
+    loading="lazy"
 
 />
   </div>
  </motion.div>
  </div>
+
  <Footer/>
 </div>
   );

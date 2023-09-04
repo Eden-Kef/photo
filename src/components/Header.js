@@ -15,28 +15,32 @@ const Header = () => {
     <div 
     onMouseEnter={mouseEnterHandler}
     onMouseLeave={mouseLeaveHandler}
-    className='flex flex-col lg:flex-row lg:items-center w-full justify-between'>
+    className='flex flex-col lg:flex-row lg:items-center w-full justify-between '>
 
 {/*Logo Section*/}
-  <Link to={'/'} className='max-w-[200px] '>
+  <Link to={'/'} className='max-w-[200px]'>
     <img src={Logo} alt ='logo'></img>
   </Link> 
 
 {/* initially hidden show on desktop view*/}
     <nav 
-        className='hidden xl:flex gap-x-12 font-semibold' >
-        <Link to = {'/'} className='text-gray-200 hover:text-primary 
+        className='hidden xl:flex gap-x-12 font-semibold ' >
+        <Link to = {'/'} className='text-white hover:text-accent 
         transition'> Home 
         </Link>
-        <Link to = {'/about '} className='text-gray-200 hover:text-primary 
+        <Link to = {'/about '} className='text-white hover:text-accent
         transition'> About 
         </Link>
-        <Link to = {'/portfolio'} className='text-gray-200 hover:text-primary 
+        <Link to = {'/portfolio'} className='text-white hover:text-accent 
         transition'> Portfolio 
+        </Link> 
+         <Link to = {'/blog'} className='text-white hover:text-accent 
+        transition'> Blog 
         </Link>
-        <Link to = {'/contact'} className='text-gray-200 hover:text-primary 
+        <Link to = {'/contact'} className='text-white hover:text-accent 
         transition'> Contact 
         </Link>
+      
     </nav>
     </div>
   {/*Socialmedia*/}
