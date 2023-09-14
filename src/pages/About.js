@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 //import images
-import Image1 from '../img/about/abtme.png';
 //import Link
 import { Link } from 'react-router-dom';
 import { client } from "../client"

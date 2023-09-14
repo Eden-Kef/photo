@@ -10,18 +10,14 @@ const builder =  imageUrlBuilder(client);
 function urlFor(source) {
   return builder.image(source)
 }
-
 export default function Portfolio() {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   const [profile, setProfile] = useState([]);
 
   useEffect(()=>{client.fetch(
-    `*[_type == "gallery"] {
-    _id,
-    _createdAt,
-    
-  }` ).then((data) => setProfile(data[0])).catch(console.error)
+    `*[_type == "gallery"]` ).then((data) => setProfile(data)).catch(console.error)
     }, []); 
+
     if (!profile) return <h2> Loading...</h2> 
   return (
 
@@ -51,16 +47,18 @@ export default function Portfolio() {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
   }}
-  className = 'md:columns-3 gap-3 md:w-[1200px] mx-auto space-y-3 pb-8 '>
+>
    </motion.div>      
-   <div className='grid grid-col-1 gap-3 md:grid-cols-2 lg:grid-cols-3 my-11 '>
-   {profile.images && (
-  <article className='border-2 border-slate-700 mx-10 hover:scale-110 transition-all'> 
-    <img src={urlFor(profile.images).url()} alt='hey'
-         className='w-[30rem] h-[-20rem] md:mt-40'
-        loading="lazy"/>
-  </article>
-   )}
+   <div className='p-9  columns-1 gap-3 lg:gap-3 sm:columns-2 lg:columns-3 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8'>
+    {profile[0]?.images?.map((data) => {
+          console.log(profile[0].images)
+      const image = urlFor(data).url()
+      return(
+  <article className='col-span-1 mx-auto mb-5 hover:scale-110 transition-all'> 
+  <img src={image} alt='hey'
+         className='w-[50rem] h-[-20rem]'
+         loading="lazy"/>  </article>)})}
+
    </div>
     
   {/* link */}

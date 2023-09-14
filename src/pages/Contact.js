@@ -25,7 +25,7 @@ const Contact = () => {
          className='lg:flex-1 px-4'>
         <h1 className='h1 text-white sm:text-7xl items-center font-bold lg:mt-20 mt-40'>Contact me</h1>
         <p className='mb-10 mt-5 text-[17px] text-white'> Get in touch using the form. </p>
-        <form action='https://t.me/share/url?url=Hi,How Are You ?' 
+        <form action='https://getform.io/f/bbba1146-4c69-4aec-9271-ab15f5bf4eec' 
                method='POST' className='flex flex-col gap-y-4'>
               <div
               className='flex gap-x-10'>
@@ -60,6 +60,7 @@ const Contact = () => {
                onMouseLeave={mouseLeaveHandler}
                className='rounded mb-[30px] py-3 my-11 mx-auto lg:mx-0  w-fit px-10 flex items-center bg-sky-900 cursor-pointer to-blur-900'
                type='submit' 
+               
                >
                 Send it
               </button>

@@ -56,7 +56,7 @@ initial="hidden"
             <article className='border-2 border-slate-700 mx-10 hover:scale-110 transition-all'
             key={post.slug.current}> 
               <img 
-              src={post.mainImage.asset.url} alt={post.title} loading="lazy" />
+              src={post.mainImage.asset.url} alt={post.title} loading="lazy"/>
               <h4 className="text-[26px] lg:text-[20px] font-primary lg:mb-5 mt-5 mb-10 text-center ">
                 {post.title}
               </h4>
