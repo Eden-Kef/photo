@@ -29,7 +29,7 @@ export default function About() {
     }, []);
     if (!author) return <div>Loading...</div>
     return (
-      <div className='h-full max-w-full text-white bg-gradient-to-br from-indigo-950 via-slate-950 to-black'>
+      <div className='max-w-full text-white bg-gradient-to-br from-indigo-950 via-slate-950 to-black'>
       <div className='max-w-screen-lg min-h-screen-lg m-auto flex flex-col
        items-center justify-between px-2 md:flex-row '>
        

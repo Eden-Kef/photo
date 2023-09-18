@@ -32,7 +32,7 @@ const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
 return (
   <>
   {!posts ? <h2> Loading...</h2> : <>
-  <div className='h-full max-w-full text-white bg-gradient-to-br from-indigo-950 via-slate-950 to-black'>
+  <div className='max-w-full text-white bg-gradient-to-br from-indigo-950 via-slate-950 to-black'>
    <div className='flex flex-col pt-40 items-center justify-between md:flex-row '>
  {/* title */}
     

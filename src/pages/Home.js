@@ -11,7 +11,7 @@ import { CursorContext } from '../context/CursorContext';
 const Home = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
-     <div className='h-full max-w-full text-white bg-gradient-to-br from-indigo-950 via-slate-950 to-black'>
+     <div className=' max-w-full text-white bg-gradient-to-br from-indigo-950 via-slate-950 to-black'>
       {/*<img src = {PhotographerImg} className='mix-blend-overlay object-cover'/>*/}
 
 {/*Text and Image wrapper*/}
